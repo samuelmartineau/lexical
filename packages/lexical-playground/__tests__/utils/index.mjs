@@ -639,3 +639,21 @@ export async function enableCompositionKeyEvents(page) {
     );
   });
 }
+
+export async function pressToggleBold(page) {
+  await keyDownCtrlOrMeta(page);
+  await page.keyboard.press('b');
+  await keyUpCtrlOrMeta(page);
+}
+
+export async function pressToggleItalic(page) {
+  await keyDownCtrlOrMeta(page);
+  await page.keyboard.press('b');
+  await keyUpCtrlOrMeta(page);
+}
+
+export async function pressToggleUnderline(page) {
+  await keyDownCtrlOrMeta(page);
+  await page.keyboard.press('u');
+  await keyUpCtrlOrMeta(page);
+}
